@@ -135,12 +135,11 @@ var myChart = new Chart(ctx, {
 });
 
 
-//pie chart showing hwo many peoplr have chosen any category
+//pie chart showing how many people have chosen any category
 
 
 function login_button() {
     
 	window.location.assign("quiz.html");
 
-}
-
+} 
