@@ -1,7 +1,11 @@
 let nie_wiem = document.getElementById("drugi");
 let wiem = document.getElementById("pierwszy");
+
+let wybor;
+
 //nie_wiem.onclick = nie_wiem_click();
 //wiem.onclick = wiem_click();
+
 
 //create_fluff();
 console.log("i am herer");
@@ -92,7 +96,10 @@ function button1_click() {
 	//write_cookie("fuck off you motherfucker");
 	window.location.assign("wybierz.html");
 
-	show_the_choices("all");
+
+	wybor = "all";
+	show_the_choices(wybor);
+	
 }
 
 function button2_click() {
@@ -101,14 +108,13 @@ function button2_click() {
 	document.getElementById("q1").style.display = "";
 	window.location.assign("#quiz");
 
-	read_cookie();
 
 }
 
 function button3_click() {
 
-	document.cookie = document.cookie + "moze,nie,moze,tak";
-	document.location.assign("chose.html");
+	wybor = "";
+	show_the_choices(wybor);
 	
 }
 
@@ -121,7 +127,8 @@ function button4_click() {
 
 function button5_click() {
 
-	show_the_choices();
+	wybor = "";
+	show_the_choices(wybor);
 
 }
 
@@ -137,19 +144,22 @@ function button7_click() {
 
 function button8_click() {
 
-	show_the_choices();
+	wybor = "";
+	show_the_choices(wybor);
 
 }
 
 function button9_click() {
 
-	show_the_choices();
+	wybor = "";
+	show_the_choices(wybor);
 
 }
 
 function button10_click() {
 
-	show_the_choices();
+	wybor = "";
+	show_the_choices(wybor);
 
 }
 
@@ -164,7 +174,7 @@ function logout(){
 }
 
 
-function login_button() {
+function login() {
     
 	window.location.assign("quiz.html");
 
