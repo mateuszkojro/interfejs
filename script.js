@@ -11,6 +11,79 @@ document.getElementById("q1").style.display = "none";
 document.getElementById("q2").style.display = "none";
 document.getElementById("q3").style.display = "none";
 document.getElementById("q4").style.display = "none";
+document.getElementById("koniec").style.display = "none";
+
+
+for(let i = 0; i < document.getElementsByClassName("in").length;i++){
+	document.getElementsByClassName("in")[i].style.display = "none";
+}
+
+function show_the_choices(input) {
+
+	document.getElementById("koniec").style.display = "";
+	switch(input){
+		case "pilkas":
+			document.getElementById("pilkas").style.display = "";
+			break;
+		case "pilkak":
+			document.getElementById("pilkak").style.display = "";
+			break;
+		case "cwicz":
+			document.getElementById("cwicz").style.display = "";
+			break;
+		case "tenis":
+			document.getElementById("tenis").style.display = "";
+			break;
+		case "judo":
+			document.getElementById("judo").style.display = "";
+			break;
+		case "gimn":
+			document.getElementById("gimn").style.display = "";
+			break;
+		case "plywanie":
+			document.getElementById("plywanie").style.display = "";
+			break;
+		case "fitnes":
+			document.getElementById("fitnes").style.display = "";
+			break;
+		case "joga":
+			document.getElementById("joga").style.display = "";
+			break;
+		case "nordic":
+			document.getElementById("nordic").style.display = "";
+			break;
+		case "samo":
+			document.getElementById("samo").style.display = "";
+			break;
+		case "taniec":
+			document.getElementById("taniec").style.display = "";
+			break;
+		case "rech":
+			document.getElementById("rech").style.display = "";
+			break;
+		case "model":
+			document.getElementById("model").style.display = "";
+			break;
+		case "brydz":
+			document.getElementById("brydz").style.display = "";
+			break;
+		case "futsal":
+			document.getElementById("futsal").style.display = "";
+			break;
+		case "ratow":
+			document.getElementById("ratow").style.display = "";
+			break;
+		default:
+
+			for(let i = 0; i < document.getElementsByClassName("in").length;i++){
+				document.getElementsByClassName("in")[i].style.display = "";
+			}
+
+			break;
+	}
+
+
+}
 
 
 function button1_click() {
@@ -81,14 +154,6 @@ function button10_click() {
 }
 
 
-function show_the_choices() {
-
-	let win = window.location.assign("wybierz.html");
-
-}
-
-
-
 function hide(obj) {
 	document.getElementById(obj).style.display = "none";
 	//window.location.assign("#q3");
@@ -97,45 +162,6 @@ function hide(obj) {
 function logout(){
 	window.location.assign("login.html");
 }
-
-
-
-//Radar graph showing your intrests
-//<canvas id="myChart" width="400" height="400"></canvas>
-var ctx = document.getElementById('myChart');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(250, 0, 0, 0.2)',
-
-            ],
-            borderColor: [
-                'rgba(255, 0, 0, 1)',
-
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-		size: 12,
-		responsive: true,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-
-//pie chart showing how many people have chosen any category
 
 
 function login_button() {
