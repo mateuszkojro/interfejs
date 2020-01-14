@@ -31,7 +31,6 @@ function hide(obj) {
 
 //prczyciski dotyczace quizu
 
-
 function button1_click() {
 
 	wybor = "all";
@@ -48,7 +47,7 @@ function button2_click() {
 
 function button3_click() {
 
-	wybor = "";
+	wybor = "pilkas";
 	show_the_choices(wybor);
 	
 }

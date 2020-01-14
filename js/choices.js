@@ -1,8 +1,7 @@
 
 function show_the_choices(input) {
-
-	document.getElementById("koniec").style.display = "";
-	switch(input){
+	//document.getElementById("koniec").style.display = "";
+	switch (input) {
 		case "pilkas":
 			document.getElementById("pilkas").style.display = "";
 			break;
@@ -54,9 +53,8 @@ function show_the_choices(input) {
 		case "ratow":
 			document.getElementById("ratow").style.display = "";
 			break;
-		default:
-
-			for(let i = 0; i < document.getElementsByClassName("in").length;i++){
+		case "all":
+			for (let i = 0; i < document.getElementsByClassName("in").length; i++) {
 				document.getElementsByClassName("in")[i].style.display = "";
 			}
 
