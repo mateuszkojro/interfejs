@@ -6,8 +6,10 @@ function logout(){
 
 
 function login() {
-    
-	window.location.assign("quiz.html");
+    if(document.getElementById("login").value == "user" && document.getElementById("pssd").value == "123"){
+		window.location.assign("quiz.html");
+	}
+	//window.location.assign("quiz.html");
 
 } 
 
@@ -23,7 +25,7 @@ function submit(){
 		}
 	}
 
-	let string = "<h1> Gratulacje! </h1> <h2> wybralas/es </h2>" + wybor;
+	let string = "<h1> Gratulacje! </h1> <h2> Dziękujemy za dokonanie wyboru!! </h2> <button onclick='window.location.reload(true)'>Powrót</button>";
 
 	document.getElementById("endgame").innerHTML = string;
 
