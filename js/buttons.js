@@ -13,14 +13,23 @@ function login() {
 
 
 function submit(){
+	document.getElementById("koniec").style.display = "none";
+
+	
+	
+	for (let i =0 ; i < document.getElementsByClassName("checkmark").length;i++){
+		if(document.getElementsByClassName("checkmark")[i].value == true){
+			wybor  = document.getElementsByClassName("checkmark")[i].id
+		}
+	}
 
 	let string = "<h1> Gratulacje! </h1> <h2> wybralas/es </h2>" + wybor;
-	
+
 	document.getElementById("endgame").innerHTML = string;
 
 }
 
-function hide(obj) {
+function hide(obj) {	
 
 	document.getElementById(obj).style.display = "none";
 
@@ -47,7 +56,7 @@ function button2_click() {
 
 function button3_click() {
 
-	wybor = "pilkas";
+	wybor = "b3";
 	show_the_choices(wybor);
 	
 }
@@ -61,7 +70,7 @@ function button4_click() {
 
 function button5_click() {
 
-	wybor = "";
+	wybor = "b5";
 	show_the_choices(wybor);
 
 }
@@ -82,21 +91,21 @@ function button7_click() {
 
 function button8_click() {
 
-	wybor = "";
+	wybor = "b8";
 	show_the_choices(wybor);
 
 }
 
 function button9_click() {
 
-	wybor = "";
+	wybor = "b9";
 	show_the_choices(wybor);
 
 }
 
 function button10_click() {
 
-	wybor = "";
+	wybor = "b10";
 	show_the_choices(wybor);
 
 }
